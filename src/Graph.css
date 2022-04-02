@@ -1,0 +1,36 @@
+.graph{
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+}
+
+@media (max-width:1400px)
+{
+    .graph{
+        width:369px;
+        height:280px;
+        background-color: rgb(255, 255, 255);
+        padding:10px;
+    }
+}
+
+@media (max-width:1040px)
+{
+    .graph{
+        width:300px;
+        height: 435px;
+        background-color: rgb(255, 255, 255);
+        padding:10px;
+    }
+}
+
+@media (max-width:630px)
+{
+    .graph{
+        width:95%;
+        height: 426px;
+        background-color: rgb(255, 255, 255);
+        padding:10px;
+    }
+}
+

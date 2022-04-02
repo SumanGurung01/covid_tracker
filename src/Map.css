@@ -1,0 +1,32 @@
+.map {
+    height: 560px;
+    width:780px;
+    background-color: white;
+    padding: 3px;
+    border-radius: 7px;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  }
+
+.map .leaflet-container {
+    height: 100%;
+    border-radius: 0px;
+}
+
+.leaflet-popup-content-wrapper{
+  width:180px;
+  height:200px;
+  padding:0px;
+}
+
+.map__image{
+  width:140px;
+  height:90px;
+}
+
+p {
+  margin: 18px 0;
+}
+
+.leaflet-popup-content h1 {
+  font-size:16px;
+}

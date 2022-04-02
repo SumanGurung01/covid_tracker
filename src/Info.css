@@ -1,0 +1,22 @@
+.info__card{
+    padding: 0px 10px 5px 10px;
+    margin:10px;
+    width:33.33%;
+    line-height: 2;
+}
+
+.info__card > h4{
+    color: rgb(75, 75, 75);
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width:630px){   
+    .info__card{
+        padding: 0px 10px 5px 10px;
+        margin:5px;
+        width:90%;
+        line-height: 2;
+        font-size: 10px;
+    }
+}
+

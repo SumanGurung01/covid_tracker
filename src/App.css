@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+.app{
+    font-size:16px;
+    padding:10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid{
+    display:grid;
+    grid-template-columns: 800px 400px;
+    grid-gap:5px;
+    grid-template-rows: repeat(8,90px);
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    background-color:rgb(235, 235, 255);
+}
+
+.app__header{
+    display:flex;
+    justify-content: space-between;
+    padding:10px 10px 10px 20px;
+    background-color:rgb(229, 229, 255);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+h1
+{
+    font-family: 'Open Sans', sans-serif;
+    padding:14px 0px 0px 0px;
+}
+
+.MuiFormControl-root {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.app__info{
+    display:flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end:3  ;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.app__table{
+    width:390px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:9;
+}
+
+.app__map{
+    display:flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:10;
+}
+
+.map{
+    width: 100%;
+}
+
+.app__developer
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end:11;
+}
+
+.fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
   }
+
+@media (max-width:1400px){
+    .grid{
+        grid-template-columns: 600px 400px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width:1040px){
+    .grid{
+        grid-template-columns: 300px 300px;
+        grid-template-rows: repeat(14,90px);
+    }
+    .app__header{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end:2;
+    }
+    .app__info{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .app__map{
+        display:flex;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end:10;
+    }
+    
+    .app__table{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:100px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 11;
+        grid-row-end:14;
+    }
+
+    .app__developer
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 14;
+        grid-row-end:15;
+    }
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+    @media (max-width:630px){
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+        .grid{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(17,90px);
+        }
+
+        .app__header{
+            font-size:9px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end:2;
+        }
+
+        h1
+        {
+            font-family: 'Open Sans', sans-serif;
+            padding:20px 0px 0px 0px;
+        }
+
+        .app__info{
+            flex-direction: column; 
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            justify-content:center;
+            align-items: center;
+        }
+    
+        .app__map{
+            display:flex;
+            justify-content: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end:10;
+        }
+        
+        .app__table{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 10;
+            grid-row-end:15;
+            height:700px;
+        }
+
+        .app__developer
+        {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 18;
+            grid-row-end:19;
+        }
+
+    }
+    
